@@ -1,0 +1,43 @@
+body {
+  background-color: #d5e1ef;
+  text-align: center;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 33%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  max-width: 320px;
+  max-height: 499px;
+  padding-bottom: 40px;
+}
+
+img {
+  width: 288px;
+  height: auto;
+  padding: 16px;
+  border-radius: 8%;
+}
+
+.header {
+  font-family: "Outfit";
+  font-weight: 700;
+  color: #1f314f;
+  margin-bottom: 0;
+  padding: 0 16px;
+}
+
+.description {
+  font-family: "Outfit";
+  font-weight: 300;
+  color: #68778d;
+  padding: 0 20px;
+}
