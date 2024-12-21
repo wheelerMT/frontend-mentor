@@ -37,7 +37,7 @@ body {
   max-width: 384px;
   max-height: 522px;
   border: 0.3mm solid var(--color-grey-950);
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--color-grey-950) 8px 8px;
 }
@@ -51,6 +51,7 @@ body {
 
 .course-image img {
   border-radius: 10px;
+  margin-top: 22px;
 }
 
 .author {
@@ -62,7 +63,7 @@ body {
 
 .author img {
   vertical-align: middle;
-  width: 40px;
+  width: 32px;
 }
 
 .course-category {
@@ -91,4 +92,5 @@ body {
 
 .author-text {
   font-weight: 700;
+  font-size: 14px;
 }
