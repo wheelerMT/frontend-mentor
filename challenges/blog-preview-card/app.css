@@ -1,14 +1,99 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
 :root {
   --color-yellow: #f4d04e;
   --color-grey-950: #111111;
   --color-grey-500: #6b6b6b;
   --color-white: #fff;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -21,25 +106,21 @@
 
 body {
   margin: 0;
-  font-family: "Figtree";
+  font-family: "Figtree", system-ui, sans-serif;
   background-color: var(--color-yellow);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100svh;
   line-height: 150%;
+  padding: 16px;
 }
 
 .card-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 384px;
-  max-height: 522px;
-  border: 0.3mm solid var(--color-grey-950);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--color-grey-950) 8px 8px;
+  max-width: 22rem;
 }
 
 .card-content {
@@ -47,11 +128,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 23px;
+  border: 0.3mm solid var(--color-grey-950);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--color-grey-950) 8px 8px;
 }
 
 .course-image img {
   border-radius: 10px;
-  margin-top: 22px;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .author {
@@ -76,13 +163,12 @@ body {
 }
 
 .published-date {
-  margin-top: 0;
-  font-size: 14px;
+  font-size: 0.86rem;
   font-weight: 400;
 }
 
 .course-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: color 0.2s;
 }
 
@@ -98,5 +184,5 @@ body {
 
 .author-text {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.86rem;
 }
