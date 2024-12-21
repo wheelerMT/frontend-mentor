@@ -83,6 +83,12 @@ body {
 
 .course-title {
   font-size: 24px;
+  transition: color 0.2s;
+}
+
+.course-title:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
 }
 
 .course-description {
