@@ -143,14 +143,16 @@ body {
 
 .author {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .author img {
-  vertical-align: middle;
+  display: block;
+  height: auto;
   width: 32px;
+  height: 32px;
 }
 
 .course-category {
