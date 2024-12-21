@@ -1,0 +1,94 @@
+:root {
+  --color-yellow: #f4d04e;
+  --color-grey-950: #111111;
+  --color-grey-500: #6b6b6b;
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Figtree"; /* Name the font */
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype"); /* Path to the font file */
+  font-weight: 100 900; /* Define the weight range supported by the variable font */
+  font-style: normal; /* Specify the font style */
+  font-display: swap; /* Optional: Use swap to avoid rendering delays */
+}
+
+body {
+  margin: 0;
+  font-family: "Figtree";
+  background-color: var(--color-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 150%;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 384px;
+  max-height: 522px;
+  border: 0.3mm solid var(--color-grey-950);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--color-grey-950) 8px 8px;
+}
+
+.card-content {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+}
+
+.course-image img {
+  border-radius: 10px;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.author img {
+  vertical-align: middle;
+  width: 40px;
+}
+
+.course-category {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  padding: 0.2em 1em;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.published-date {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.course-title {
+  font-size: 24px;
+}
+
+.course-description {
+  font-weight: 400;
+  color: var(--color-grey-500);
+}
+
+.author-text {
+  font-weight: 700;
+}
