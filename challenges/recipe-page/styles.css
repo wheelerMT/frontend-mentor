@@ -107,6 +107,11 @@ article {
   padding-bottom: 16px;
 }
 
+.overview,
+img {
+  border-radius: 10px;
+}
+
 ul,
 ol {
   padding: 0 24px;
