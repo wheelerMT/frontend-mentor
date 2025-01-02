@@ -67,6 +67,23 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: "Outfit"; /* Name the font */
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype"); /* Path to the font file */
+  font-weight: 100 900; /* Define the weight range supported by the variable font */
+  font-style: normal; /* Specify the font style */
+  font-display: swap; /* Optional: Use swap to avoid rendering delays */
+}
+
+@font-face {
+  font-family: "YoungSerif"; /* Name the font */
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype"); /* Path to the font file */
+  font-weight: 100 900; /* Define the weight range supported by the variable font */
+  font-style: normal; /* Specify the font style */
+  font-display: swap; /* Optional: Use swap to avoid rendering delays */
+}
+
 :root {
   --color-stone-100: hsl(30, 54%, 90%);
   --color-stone-150: hsl(30, 18%, 87%);
@@ -81,8 +98,18 @@ body {
   height: 100svh;
   width: 100svw;
   background-color: var(--color-stone-100);
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "YoungSerif", sans-serif;
+}
 main {
   display: flex;
   align-items: center;
