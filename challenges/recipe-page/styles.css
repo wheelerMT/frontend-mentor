@@ -157,3 +157,7 @@ li {
 .preparation li::marker {
   color: var(--color-rose-800);
 }
+
+.ingredients {
+  padding: 16px 0;
+}
