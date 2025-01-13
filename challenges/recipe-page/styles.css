@@ -109,6 +109,7 @@ h4,
 h5,
 h6 {
   font-family: "YoungSerif", sans-serif;
+  padding: 16px 0;
 }
 main {
   display: flex;
@@ -120,7 +121,7 @@ main {
 article {
   background-color: white;
   padding: 32px;
-  max-width: 600px;
+  max-width: 650px;
   margin-bottom: 32px;
   border-radius: 15px;
 }
@@ -153,11 +154,51 @@ li {
   border-radius: 10px;
 }
 
+.preparation h2 {
+  padding: 0;
+}
 .preparation h2,
 .preparation li::marker {
   color: var(--color-rose-800);
 }
 
+.ingredients li::marker,
+.ingredients h2,
+.instructions li::marker,
+.instructions h2,
+.nutrition td,
+.nutrition h2 {
+  color: var(--color-brown);
+}
+
 .ingredients {
   padding: 16px 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color-stone-150);
+  margin-top: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid var(--color-stone-150);
+  display: flex;
+  justify-content: space-between;
+}
+
+th,
+td {
+  font-weight: normal;
+  padding: 8px 24px;
+}
+
+td {
+  padding-right: 33%;
 }
